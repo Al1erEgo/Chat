@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap')
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.chat {
+    display: flex;
+    width: fit-content;
+    justify-content: center;
+    margin: auto;
+}
+.chat-body {
+    display: flex;
+    width: 400px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+.chat-body-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 0;
+}
+.chat-body-back-one-element {
+    background: linear-gradient(45deg, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+    width: 150px;
+    height: 500px;
+    border-radius: 0 0 900px 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+.chat-body-back-two-element {
+    background: hsl(264, 100%, 61%);
+    opacity: 0.1;
+    width: 150px;
+    height: 500px;
+    border-radius: 900px 0 0 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+}
+.chat-body-content-phone {
+    margin-top: 70px;
+    display: flex;
+    width: 200px;
+    height: 400px;
+    background-color: white;
+    border-radius: 40px;
+    box-shadow: 20px 5px 50px gray;
+}
+.chat-body-content-text-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.chat-body-content-text {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    text-align: center;
+    width: 80%;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+@media (min-width: 401px) {
+    body {
+        min-height: 600px;
+    }
+    .chat {
+        height: 100%;
+        width: 100%;
+    }
+    .chat-body {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        overflow: auto;
+        position: relative;
+    }
+    .chat-body-content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: end;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+    }
+    .chat-body-back-one-element {
+        width: 30%;
+        height: 60%;
+        border-radius: 0 0 900px 900px;
+        left: -50px;
+    }
+    .chat-body-back-two-element {
+        width: 30%;
+        height: 60%;
+        border-radius: 900px 900px 0 0;
+        right: -50px;
+    }
+    .chat-body-content-phone-container {
+        height: 100%;
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .chat-body-content-phone {
+        margin-top: 0;
+    }
+    .chat-body-content-text-container {
+        height: 100%;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+}
