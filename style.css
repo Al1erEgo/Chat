@@ -57,6 +57,8 @@ html, body {
 }
 .chat-body-content-phone-inner {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 180px;
     height: 380px;
     border-radius: 30px;
@@ -68,13 +70,159 @@ html, body {
     height: 60px;
     background: linear-gradient(90deg, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .chat-body-content-phone-inner-header-speaker {
     background-color: white;
     width: 100px;
     height: 15px;
     border-radius: 0 0 7px 7px;
+}
+.chat-body-content-phone-inner-header-samuel {
+    display: flex;
+    width: 100%;
+}
+.chat-body-content-phone-inner-header-samuel-ava {
+    overflow: hidden;
+    width: 25px;
+    height: 25px;
+    margin: 10px 0 0 20px;
+    border: solid 1px;
+    border-color: white;
+    border-radius: 50%;
+}
+.chat-body-content-phone-inner-header-samuel-ava-img {
+    width: 25px;
+    height: 25px;
+}
+.chat-body-content-phone-inner-header-samuel-ava-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5px;
+    margin-top: 9px;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+}
+.chat-body-content-phone-inner-header-samuel-ava-text-name {
+    font-size: 12px;
+}
+.chat-body-content-phone-inner-header-samuel-ava-text-status {
+    font-size: 8px;
+    opacity: 0.5;
+}
+.chat-body-content-phone-inner-header-samuel-dots {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+.chat-body-content-phone-inner-header-samuel-dots-onedot {
+    background-color: white;
+    height: 2px;
+    width: 2px;
+    border-radius: 50%;
+    margin-top: 2px;
+}
+.chat-body-content-phone-inner-chat {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: 'Rubik', sans-serif;
+    margin: 7px;
+    height: 260px;
+}
+.chat-body-content-phone-inner-chat-msgleft {
+    background-color: hsl(263, 30%, 92%);
+    border-radius: 5px;
+    font-size: 7px;
+    width: 60%;
+    margin-top: 5px;
+    padding: 3px;
+    color: hsl(276, 55%, 52%);
+}
+.chat-body-content-phone-inner-chat-dogs {
+    display: flex;
+    align-self: flex-end;
+    margin-top: 5px;
+    width: 60%;
+    justify-content: space-between;
+}
+.chat-body-content-phone-inner-chat-dogs-img {
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+}
+.chat-body-content-phone-inner-chat-msgright {
+    background-color: white;
+    border-radius: 5px;
+    font-size: 7px;
+    max-width: 60%;
+    margin-top: 5px;
+    padding: 3px;
+    color: black;
+    align-self: flex-end;
+}
+.chat-body-content-phone-inner-chat-msgmoney {
+    display: flex;
+    background: linear-gradient(270deg, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+    width: 70%;
+    max-height: 25px;
+    margin-top: 5px;
+    border-radius: 8px 8px 8px 3px;
+    padding: 7px;
+    align-items: center;
+}
+.chat-body-content-phone-inner-chat-msgmoney-part {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.chat-body-content-phone-inner-chat-msgmoney-round {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: solid 1px white;
+    opacity: 0.6;
+}
+.chat-body-content-phone-inner-chat-msgmoney-text {
+    font-size: 7px;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    margin-left: 5px;
+}
+.chat-body-content-phone-inner-chat-msgmoney-cost {
+    font-size: 9px;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    justify-self: flex-end;
+}
+.chat-body-content-phone-inner-input {
+    display: flex;
+    width: 95%;
+    height: 30px;
+    background-color: white;
+    border-radius: 15px;
+    align-items: center;
+}
+.chat-body-content-phone-inner-input-input {
+    height: 100%;
+    border: 0px;
+    border-radius: 15px;
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+}
+.chat-body-content-phone-inner-input-button {
+    height: 25px;
+    width: 25px;
+    border: 0px;
+    border-radius: 50%;
+    margin-left: 18px;
+    background-color: hsl(271, 36%, 24%);
 }
 .chat-body-content-text-container {
     display: flex;
